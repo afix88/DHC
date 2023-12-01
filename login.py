@@ -12,6 +12,8 @@ def main():
     }
     </style>
     '''
+    st.set_page_config(page_title="DHC&DPO!!!",
+                   page_icon=":bar_chart:", layout="wide")
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
     st.title("DHC & DPO ")
