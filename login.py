@@ -37,7 +37,7 @@ def main():
                 st.error("Login gagal. Periksa kembali username dan password.")
     else:
         # Embed Power BI setelah login berhasil
-        power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiOWQ1YjYzNTItNjgyOC00YzdmLTllOGEtZjVhNWZkOWZlMTQyIiwidCI6ImM4NThlYTJiLWFhNjUtNDg0MC05ZWVlLWU5MTM0OWE2OTY5ZSIsImMiOjEwfQ%3D%3D"
+        power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=3168e181-7e31-440c-abce-8e97775724ef&appId=772b90d9-3b61-491e-8dc8-0bbf14b67df2&autoAuth=true&ctid=c858ea2b-aa65-4840-9eee-e91349a6969e"
         embed_code = f'<iframe id="myIframe" src="{power_bi_url}" frameborder="0" allowfullscreen="true" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>'
         st.markdown(embed_code, unsafe_allow_html=True)
 
